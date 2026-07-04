@@ -145,13 +145,13 @@
 ### Bước 1: Tải mã nguồn về máy
 Tải file ZIP trực tiếp từ GitHub bằng nút **Code** -> **Download ZIP** và giải nén thư mục ra máy tính của bạn.
 
-### Bước 2: Tự động khởi chạy và thiết lập môi trường
-Bạn không cần phải chạy bất kỳ dòng lệnh cài đặt thư viện nào! 
+### Bước 2: Tự động khởi chạy và thiết lập môi trường co san (Không can internet)
+Bạn không cần phải chạy bất kỳ dòng lệnh cài đặt thư viện hay tải xuống nào!
 * Nhấp đúp trực tiếp vào file **`NAVTools_Launcher.vbs`** (Khuyên dùng) hoặc chạy file **`Start_NAVTools.bat`**.
-* **Ở lần chạy đầu tiên**: Chương trình sẽ tự động hiển thị màn hình console và tự động cài đặt môi trường ảo `.venv`, tải và cấu hình tất cả các thư viện cần thiết từ `requirements.txt`, đăng ký driver `playwright chromium` tự động.
-* **Từ lần chạy thứ hai**: Chương trình sẽ chạy ẩn hoàn toàn tiến trình thiết lập và khởi động trực tiếp giao diện ứng dụng lên cực kỳ mượt mà.
+* **Ở lần chạy đầu tiên**: Chương trình sẽ tự động ghép nối các phần môi trường ảo đã được chia nhỏ tích hợp sẵn (`venv_chunks`) và giải nén thành môi trường ảo `.venv` hoàn chỉnh trong vòng 10-15 giây. Không cần kết nối internet để tải thư viện, đảm bảo giải nén ra là chạy ngay lập tức!
+* **Từ lần chạy thứ hai**: Chương trình sẽ chạy ẩn hoàn toàn dưới nền và khởi động trực tiếp giao diện ứng dụng lên cực kỳ mượt mà.
 
-*Lưu ý: Nếu máy tính của bạn chưa có Python, màn hình thiết lập lần đầu sẽ hiện thông báo cảnh báo và cung cấp link trực tiếp để bạn tải bộ cài đặt Python 3.11 chính thức của Windows.*
+*Lưu ý: Trong trường hợp bạn không dùng bộ ZIP tải từ Releases/GitHub chứa sẵn thư mục `venv_chunks`, tệp tin bat sẽ tự động kích hoạt chế độ dự phòng (fallback), kiểm tra Python trên hệ thống và tự động tải mới toàn bộ thư viện qua Internet.*
 
 ### Bước 3: Cấu hình FFmpeg (Bắt buộc cho xử lý Video)
 Để sử dụng các tính năng ghép nối video hoặc chỉnh sửa video nâng cao ở tab **Nối khung hình**:
