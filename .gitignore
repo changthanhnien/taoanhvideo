@@ -20,6 +20,11 @@ huge_video.mp4
 video_output/
 ffmpeg/
 
+# Un-ignore assets folder files (must be after wildcards to take precedence)
+!assets/
+!assets/*.png
+!assets/*.ico
+
 # Nested duplicate folder
 NAVTools.exe_extracted/
 

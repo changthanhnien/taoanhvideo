@@ -4,42 +4,79 @@
   <img src="assets/logo.png" alt="NAVTools Logo" width="128" height="128">
 </p>
 
-**NAV Tools** là một ứng dụng desktop mạnh mẽ giúp tự động hóa quy trình tạo video và hình ảnh bằng trí tuệ nhân tạo (AI) sử dụng các nền tảng tiên tiến hàng đầu hiện nay như **Google Labs (Flow - Video-FX, Image-FX)** và **X.com Grok AI**. Ứng dụng được xây dựng trên nền tảng Python, giao diện đồ họa hiện đại với **PySide6** và lõi tự động hóa trình duyệt **Playwright**.
+**NAV Tools** là một ứng dụng desktop toàn diện và mạnh mẽ giúp tự động hóa quy trình tạo video và hình ảnh bằng trí tuệ nhân tạo (AI) sử dụng các nền t gian tiên tiến hàng đầu hiện nay như **Google Labs (Flow - Video-FX, Image-FX)** và **X.com Grok AI**. Ứng dụng được xây dựng trên nền tảng Python, giao diện đồ họa hiện đại với **PySide6** và lõi tự động hóa trình duyệt **Playwright** kết hợp công nghệ ẩn danh CDP chống phát hiện bot.
 
 ---
 
-## 🌟 Các tính năng nổi bật
+## 📸 Giao diện & Các tính năng nổi bật của từng Tab
 
-### 1. Tạo Ảnh & Video bằng Google Flow (Video-FX / Image-FX)
-* **Tạo hình ảnh (Image-FX)**:
-  * Hỗ trợ model thế hệ mới nhất (**Nano Banana 2**).
-  * Cho phép **tạo hàng loạt (Batch Generation)** với số lượng ảnh tùy chọn cực nhanh.
-  * Tự động điều hướng và gọi API ngầm từ trình duyệt để lấy dữ liệu ảnh sạch, bỏ qua các bước thủ công.
-* **Tạo video (Video-FX)**:
-  * Hỗ trợ model cao cấp nhất (**Veo 3.1 - Fast**).
-  * Hỗ trợ các tỷ lệ khung hình chuẩn (16:9, 9:16, 1:1, v.v.).
-  * Tự động hóa hoàn toàn các thao tác giao diện: điền prompt, chọn cài đặt, bấm tạo, theo dõi tiến trình và tự động tải video về máy.
-
-### 2. Tạo Ảnh & Video bằng Grok AI (X.com)
-* Tích hợp tài khoản Grok để tạo ảnh và video chất lượng cao trực tiếp trên tài khoản X Premium của bạn.
-* Hỗ trợ các chế độ Grok Image (Tốc độ / Chất lượng) và Grok Video.
-
-### 3. Quản lý Tài khoản Thông minh (Multi-Account & Auto-Rotation)
-* Quản lý cùng lúc danh sách nhiều tài khoản Google và Grok.
-* **Tự động đăng nhập và đồng bộ cookie/session**: Trình duyệt Chrome ẩn kết nối qua giao thức gỡ lỗi CDP giúp lưu giữ phiên đăng nhập an toàn, không bị Google quét bot.
-* **Gia hạn phiên tự động**: Tự làm mới Session Token khi hết hạn mà không cần người dùng can thiệp.
-* **Xoay vòng tài khoản tự động (Auto-Rotation)**: Khi tài khoản hiện tại hết lượt tạo (hết quota) hoặc bị lỗi, phần mềm sẽ tự động chuyển sang tài khoản tiếp theo trong danh sách để chạy tiếp tác vụ, tránh bị gián đoạn.
-
-### 4. Công cụ Nâng cao
-* **Upscale chất lượng**: Nâng cao độ phân giải hình ảnh lên 2K/4K và video lên 1080p/2K.
-* **Ghép nối video (Flow Concat)**: Tự động ghép nối nhiều video ngắn đã được tạo thành một video dài hoàn chỉnh.
+### 1. Tạo Ảnh Flow (Image-FX)
+* **Mô tả**: Tự động hóa quy trình tạo ảnh nghệ thuật sử dụng model thế hệ mới nhất của Google (**Nano Banana 2 / Imagen 3**). Hỗ trợ tính năng **Tạo hàng loạt (Batch Generation)**, tự động lấy token và tải ảnh sạch về máy mà không cần thao tác tay.
+* **Giao diện**:
+![Tạo ảnh Flow](assets/flow_image.png)
 
 ---
 
-## 📸 Giao diện ứng dụng
+### 2. Tạo Video Flow (Video-FX)
+* **Mô tả**: Tạo video chất lượng cao với model cao cấp nhất (**Veo 3.1 - Fast**). Hỗ trợ cấu hình tỷ lệ khung hình (16:9, 9:16, 1:1), thời lượng (6s, 8s). Tự động điền prompt, bấm tạo và theo dõi tiến trình trực quan trên giao diện ứng dụng.
+* **Giao diện**:
+![Tạo video Flow](assets/flow_video.png)
 
-### Trang quản lý tác vụ Google Flow
-![Google Flow Tools](assets/flow_page.png)
+---
+
+### 3. Video to Video (Character Video)
+* **Mô tả**: Chuyển đổi phong cách hoặc nhân vật từ một video nguồn đầu vào thành một video mới nhưng vẫn giữ nguyên chuyển động vật lý, biểu cảm và nhịp độ gốc.
+* **Giao diện**:
+![Video to Video](assets/char_video.png)
+
+---
+
+### 4. Nối Khung Hình (Long Video / Frame to Video)
+* **Mô tả**: Tạo các video dài và mượt mà hơn bằng cách nối ghép và thiết lập hiệu ứng chuyển cảnh mềm mại giữa các khung ảnh tĩnh hoặc các đoạn video ngắn khác nhau.
+* **Giao diện**:
+![Nối khung hình](assets/frame_video.png)
+
+---
+
+### 5. Tạo Ảnh Grok (Grok Image)
+* **Mô tả**: Kết nối trực tiếp với tài khoản X Premium của bạn để tạo hình ảnh nghệ thuật từ văn bản sử dụng mô hình Grok AI thế hệ mới với hai chế độ: Tối ưu tốc độ (Speed) hoặc Tối ưu chất lượng (Quality).
+* **Giao diện**:
+![Tạo ảnh Grok](assets/grok_image.png)
+
+---
+
+### 6. Tạo Video Grok (Grok Video)
+* **Mô tả**: Tạo các clip chuyển động ngắn độc đáo trực tiếp từ mô tả văn bản thông qua tích hợp API tự động hóa tài khoản Grok AI.
+* **Giao diện**:
+![Tạo video Grok](assets/grok_video.png)
+
+---
+
+### 7. Xóa Logo (Watermark Remove)
+* **Mô tả**: Sử dụng công nghệ học sâu (Inpainting - LaMa, Telea, Smart Engine) để tự động dò quét và xóa bỏ các watermark, logo hoặc vật thể thừa trên hình ảnh/video một cách tự nhiên nhất mà không làm mờ nhoè vùng xung quanh.
+* **Giao diện**:
+![Xóa logo](assets/watermark_remove.png)
+
+---
+
+### 8. Workflow Studio (Node-based Editor)
+* **Mô tả**: Không gian làm việc kéo thả trực quan giúp bạn liên kết nhiều tác vụ tạo ảnh, tạo video, chuyển văn bản thành giọng nói (TTS), dịch thuật thành một quy trình tự động hóa liên tục từ đầu đến cuối (Pipeline).
+* **Giao diện**:
+![Workflow Studio](assets/workflow_studio.png)
+
+---
+
+### 9. Lịch Sử Tạo (History)
+* **Mô tả**: Trình quản lý lưu trữ tất cả các tác vụ đã thực hiện. Bạn có thể xem lại hình ảnh/video kết quả, kiểm tra lại prompt đã sử dụng, tải lại file hoặc chạy lại tác vụ bị lỗi chỉ với một nút bấm.
+* **Giao diện**:
+![Lịch sử tạo](assets/history.png)
+
+---
+
+### 10. Cài Đặt Hệ Thống (Settings)
+* **Mô tả**: Nơi quản lý danh sách tài khoản Google và Grok (thêm, sửa, xóa, đồng bộ hóa cookie), cấu hình đường dẫn lưu kết quả mặc định, tùy chọn phông chữ giao diện và chế độ hiển thị sáng/tối (Light/Dark mode).
+* **Giao diện**:
+![Cài đặt hệ thống](assets/settings.png)
 
 ---
 
@@ -87,24 +124,19 @@ python main.py
 
 ---
 
-## 📖 Hướng dẫn Sử dụng từng tính năng
+## 📖 Hướng dẫn Sử dụng
 
 ### 1. Đăng nhập và cấu hình tài khoản
-1. Mở phần mềm, nhấn vào biểu tượng **Cài đặt** (Settings) ở góc dưới bên trái.
-2. Tại tab **Quản lý tài khoản Google** hoặc **Tài khoản Grok**, nhấn nút **Thêm tài khoản**.
+1. Mở phần mềm, nhấn vào biểu tượng **Cài đặt** (Settings) ở góc dưới bên trái (hoặc chọn tab Cài đặt hệ thống).
+2. Tại bảng **Tài khoản Google** hoặc **Tài khoản Grok**, nhấn nút **Thêm tài khoản**.
 3. Một cửa sổ Chrome thực tế sẽ hiện lên. Bạn chỉ cần thực hiện đăng nhập vào tài khoản Google hoặc X (Grok) của mình như bình thường.
 4. Sau khi đăng nhập thành công, cửa sổ Chrome sẽ tự động đóng lại. Hệ thống sẽ đồng bộ hóa cookie và hiển thị trạng thái tài khoản là **Đã kết nối** (Connected).
 
 ### 2. Thiết lập tác vụ tạo ảnh / video hàng loạt
-1. Tại màn hình chính, nhấn **Tạo tác vụ mới** (hoặc chọn tab tác vụ tương ứng).
-2. Điền nội dung **Prompt** mô tả bức ảnh/video bạn muốn tạo.
-3. Chọn các thông số:
-   * **Loại tác vụ**: Google Flow Image, Google Flow Video, Grok Image hoặc Grok Video.
-   * **Tỷ lệ**: 16:9, 9:16 hoặc 1:1.
-   * **Số lượng (Quantity)**: Số ảnh hoặc video cần tạo cho prompt đó (Ví dụ: tạo 10 ảnh chibi chihuahua).
-   * **Thời lượng video**: 6s hoặc 8s (đối với video).
-4. Nhấn nút **Bắt đầu tạo**. Tiến trình chạy ẩn sẽ tự động kích hoạt trình duyệt Chrome ẩn danh, tự động lấy token và gửi yêu cầu tạo.
-5. Kết quả sau khi được tạo xong sẽ được tự động tải về thư mục máy tính của bạn và cập nhật trạng thái **Hoàn thành** (Completed) trên bảng theo dõi tác vụ.
+1. Tại tab **Tạo ảnh Flow** hoặc **Tạo video Flow**, điền nội dung mô tả vào khung **Prompt**.
+2. Thiết lập các thông số: Tỷ lệ ảnh/video, số lượng (Quantity) cần tạo hàng loạt (Ví dụ: tạo 10 ảnh).
+3. Nhấn nút **Bắt đầu tạo**. Tiến trình chạy ẩn sẽ tự động kích hoạt Chrome dưới giao thức CDP, tự động lấy token và gửi yêu cầu tạo.
+4. Kết quả sau khi được tạo xong sẽ được tự động tải về thư mục máy tính của bạn và cập nhật trạng thái trên bảng theo dõi tác vụ.
 
 ### 3. Thư mục lưu trữ kết quả tạo ảnh/video
 Mặc định kết quả ảnh và video sẽ được tự động tải về thư mục:
