@@ -4,18 +4,18 @@
   <img src="assets/logo.png" alt="NAVTools Logo" width="128" height="128" style="border-radius: 50%; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4); border: 2px solid #3f3f46;">
 </p>
 
-**NAV Tools** là một ứng dụng desktop toàn diện và chuyên nghiệp giúp tự động hóa quy trình tạo video và hình ảnh bằng trí tuệ nhân tạo (AI) sử dụng các nền tảng tiên tiến hàng đầu hiện nay như **Google Labs (Flow - Video-FX, Image-FX)** và **X.com Grok AI**. Ứng dụng được xây dựng trên nền tảng Python, giao diện đồ họa hiện đại với **PySide6** và lõi tự động hóa trình duyệt **Playwright** kết hợp công nghệ ẩn danh CDP chống phát hiện bot.
+**NAV Tools** là một ứng dụng desktop toàn diện và chuyên nghiệp giúp tự động hóa quy trình tạo video và hình ảnh bằng trí tuệ nhân tạo (AI) sử dụng các nền tảng tiên tiến hàng đầu hiện nay như **Google Labs (Flow - Video-FX, Image-FX)** và **Grok AI**. Ứng dụng được xây dựng trên nền tảng Python, giao diện đồ họa hiện đại với **PySide6** và lõi tự động hóa trình duyệt **Playwright** kết hợp công nghệ ẩn danh CDP chống phát hiện bot.
 
 ---
 
 ## 📸 Hướng dẫn sử dụng chi tiết từng tính năng giao diện
 
 ### 1. Tạo Ảnh Flow (Google Image-FX)
-* **Chi tiết tính năng**: Tự động hóa quy trình tạo ảnh nghệ thuật sử dụng model thế hệ mới nhất của Google (**Nano Banana 2 / Imagen 3**). Giao diện được chia thành hai phần trực quan:
+* **Chi tiết tính năng**: Tự động hóa quy trình tạo ảnh nghệ thuật sử dụng model thế hệ mới nhất của Google (**Nano Banana 2 / Nano Banana Pro**). Giao diện được chia thành hai phần trực quan:
   * **Cấu hình (Bên trái)**:
     * **Chế độ tạo**: Cho phép chọn *Text -> Ảnh* hoặc *Ảnh -> Ảnh* (khi chọn Ảnh -> Ảnh, giao diện sẽ mở rộng ô tải ảnh mẫu đầu vào).
     * **Mô hình**: Lựa chọn model (ví dụ: *Nano Banana 2*, *Omni Flash*). Bên cạnh có nút 🔄 để tự động đồng bộ hóa danh sách mô hình trực tiếp từ tài khoản Google Labs của bạn.
-    * **Tỷ lệ**: Chọn các tỷ lệ khung hình ảnh mong muốn (*1:1 Vuông*, *16:9 Rộng*, *9:16 Dọc*).
+    * **Tỷ lệ**: Chọn các tỷ lệ khung hình ảnh mong muốn (*1:1*, *16:9*, *9:16*, *4:3*, *3:4*).
     * **Đồng thời**: Thiết lập số luồng chạy song song trên cùng một tài khoản (hỗ trợ tối đa 4 luồng để tối ưu hiệu năng).
     * **Delay**: Thời gian chờ giữa các lần gửi yêu cầu (mặc định 3 giây) nhằm đảm bảo tài khoản hoạt động tự nhiên, không bị hệ thống Google nghi ngờ.
     * **Chế độ lưu**: Tùy chỉnh chế độ lưu ảnh và đặt tên tệp tin đầu ra.
@@ -28,7 +28,7 @@
 ---
 
 ### 2. Tạo Video Flow (Google Video-FX)
-* **Chi tiết tính năng**: Tự động hóa quy trình tạo video độ nét cao từ văn bản hoặc hình ảnh sử dụng model cao cấp nhất (**Veo 3.1 - Fast / Quality**).
+* **Chi tiết tính năng**: Tự động hóa quy trình tạo video độ nét cao từ văn bản hoặc hình ảnh sử dụng model cao cấp nhất (**Omni Flash**, **Veo 3.1 - Lite**, **Veo 3.1 - Fast**, **Veo 3.1 - Quality**).
   * **Cấu hình (Bên trái)**:
     * **Chế độ tạo**: Chọn giữa *Text -> Video* (từ mô tả văn bản), *Ảnh -> Video* (tải ảnh tĩnh làm điểm bắt đầu cho video), hoặc *Frame đầu -> Frame cuối* (tải 2 ảnh để sinh đoạn video chuyển động mượt mà từ ảnh đầu đến ảnh cuối).
     * **Mô hình**: Đồng bộ danh sách model Video-FX có sẵn. Giao diện hiển thị chi tiết số lượng điểm credit tiêu thụ cho từng giây video của model đó.
@@ -126,7 +126,7 @@
 * **Chi tiết tính năng**: Hộp thoại cấu hình trung tâm của phần mềm:
   * **Tab Tài khoản Google**: Danh sách các tài khoản Google đã cấu hình. Nhấn *Thêm tài khoản* để mở trình duyệt đăng nhập thực tế và đồng bộ cookie tự động. Có cột hiển thị trạng thái hoạt động (*Đã kết nối* hoặc *Lỗi/Hết phiên*).
   * **Tab Tài khoản Grok**: Quản lý danh sách tài khoản X (Grok AI) tương tự Google.
-  * **Tab Cấu hình chung**: Tùy chỉnh phông chữ giao diện, đường dẫn lưu ảnh/video mặc định trên máy tính, cài đặt API Key cho dịch vụ dịch thuật Gemini, số ngày lưu giữ nhật ký log hệ thống và chế độ sáng/tối.
+  * **Tab Cấu hình chung**: Tùy chỉnh phông chữ giao diện, đường dẫn lưu ảnh/video mặc định trên máy tính, cài đặt API Key cho dịch vụ dịch thuật Gemini, số ngày lưu giữ nhật ký log hệ thống.
 * **Giao diện**:
 ![Cài đặt hệ thống](assets/settings.png)
 
