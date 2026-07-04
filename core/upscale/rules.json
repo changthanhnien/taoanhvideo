@@ -1,0 +1,28 @@
+{
+  "ultrasharp": {
+    "priority": 1,
+    "conditions": [
+      {"feature": "text_density", "operator": ">", "value": 0.1},
+      {"feature": "line_density", "operator": ">", "value": 0.05}
+    ],
+    "logic": "OR",
+    "fallback": "upscayl-lite"
+  },
+  "realesr-animevideov3": {
+    "priority": 2,
+    "conditions": [
+      {"feature": "text_density", "operator": "<=", "value": 0.001},
+      {"feature": "line_density", "operator": "<", "value": 0.02},
+      {"feature": "entropy", "operator": "<", "value": 5.0},
+      {"feature": "edge_density", "operator": ">", "value": 0.03}
+    ],
+    "logic": "AND",
+    "fallback": "upscayl-lite"
+  },
+  "upscayl-lite": {
+    "priority": 3,
+    "conditions": [],
+    "logic": "DEFAULT",
+    "fallback": "upscayl-lite"
+  }
+}

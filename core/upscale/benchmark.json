@@ -1,0 +1,144 @@
+{
+  "version": 2,
+  "environment": {
+    "gpu": "Intel(R) Iris(R) Xe Graphics",
+    "driver": "31.0.101.5333",
+    "ncnn_mtime": 1782530853
+  },
+  "benchmarks": {
+    "ultrasharp": {
+      "time_ms_per_mp": 5000.0,
+      "timestamp": 0
+    },
+    "realesr-general-x4v3": {
+      "time_ms_per_mp": 5000.0,
+      "details": [
+        {
+          "size": 512,
+          "time_ms": 1310.72,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 1024,
+          "time_ms": 5242.88,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 2048,
+          "time_ms": 20971.52,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 4096,
+          "time_ms": 83886.08,
+          "ms_per_mp": 5000.0
+        }
+      ],
+      "timestamp": 1782544741.1275926
+    },
+    "": {
+      "time_ms_per_mp": 5000.0,
+      "details": [
+        {
+          "size": 512,
+          "time_ms": 1310.72,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 1024,
+          "time_ms": 5242.88,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 2048,
+          "time_ms": 20971.52,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 4096,
+          "time_ms": 83886.08,
+          "ms_per_mp": 5000.0
+        }
+      ],
+      "timestamp": 1782547078.329698
+    },
+    "upscayl-lite": {
+      "time_ms_per_mp": 5000.0,
+      "details": [
+        {
+          "size": 512,
+          "time_ms": 1310.72,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 1024,
+          "time_ms": 5242.88,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 2048,
+          "time_ms": 20971.52,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 4096,
+          "time_ms": 83886.08,
+          "ms_per_mp": 5000.0
+        }
+      ],
+      "timestamp": 1782550179.827847
+    },
+    "realesr-animevideov3": {
+      "time_ms_per_mp": 4429.440480474,
+      "details": [
+        {
+          "size": 512,
+          "time_ms": 1235.1242000004277,
+          "ms_per_mp": 4711.624908448897
+        },
+        {
+          "size": 1024,
+          "time_ms": 4119.787900010124,
+          "ms_per_mp": 3928.9359092808954
+        },
+        {
+          "size": 2048,
+          "time_ms": 17101.020900008734,
+          "ms_per_mp": 4077.2011041662063
+        },
+        {
+          "size": 4096,
+          "time_ms": 83886.08,
+          "ms_per_mp": 5000.0
+        }
+      ],
+      "timestamp": 1782551542.270838
+    },
+    "Speed": {
+      "time_ms_per_mp": 5000.0,
+      "details": [
+        {
+          "size": 512,
+          "time_ms": 1310.72,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 1024,
+          "time_ms": 5242.88,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 2048,
+          "time_ms": 20971.52,
+          "ms_per_mp": 5000.0
+        },
+        {
+          "size": 4096,
+          "time_ms": 83886.08,
+          "ms_per_mp": 5000.0
+        }
+      ],
+      "timestamp": 1782551851.3924923
+    }
+  }
+}

@@ -1,0 +1,70 @@
+# ui/themes/tokens.py
+
+THEME_TOKENS = {
+    "dark": {
+        "bg_app": "#0f1115",
+        "bg_surface": "#16191f",
+        "bg_card": "#1b2028",
+        "bg_input": "#1b2028",
+        "border": "#2a3140",
+        "border_subtle": "#2a3140",
+        "border_focus": "#3b82f6",
+        "text_primary": "#e2e8f0",
+        "text_muted": "#8b949e",
+        "accent": "#3b82f6",
+        "accent_primary": "#3b82f6",
+        "accent_hover": "#60a5fa",
+        "accent_active": "#2563eb",
+        "danger_primary": "#ef4444",
+        "danger_hover": "#f87171",
+        "success_primary": "#10b981",
+        "warning_primary": "#f59e0b",
+        "scrollbar_bg": "transparent",
+        "scrollbar_handle": "#2a3140",
+        "scrollbar_handle_hover": "#8b949e"
+    },
+    "light": {
+        "bg_app": "#f8fafc",
+        "bg_surface": "#ffffff",
+        "bg_card": "#ffffff",
+        "bg_input": "#f1f5f9",
+        "border": "#e2e8f0",
+        "border_subtle": "#e2e8f0",
+        "border_focus": "#2563eb",
+        "text_primary": "#0f172a",
+        "text_muted": "#64748b",
+        "accent": "#2563eb",
+        "accent_primary": "#2563eb",
+        "accent_hover": "#1d4ed8",
+        "accent_active": "#1e40af",
+        "danger_primary": "#dc2626",
+        "danger_hover": "#b91c1c",
+        "success_primary": "#059669",
+        "warning_primary": "#d97706",
+        "scrollbar_bg": "transparent",
+        "scrollbar_handle": "#e2e8f0",
+        "scrollbar_handle_hover": "#64748b"
+    },
+    "high_contrast": {
+        "bg_app": "#000000",
+        "bg_surface": "#000000",
+        "bg_surface_hover": "#000000",
+        "bg_input": "#000000",
+        "bg_input_hover": "#000000",
+        "border_subtle": "#ffffff",
+        "border_focus": "#ffff00",     # High contrast yellow focus
+        "text_primary": "#ffffff",
+        "text_secondary": "#ffffff",
+        "text_muted": "#dddddd",
+        "accent_primary": "#ffff00",   # Yellow accent
+        "accent_hover": "#ffffff",
+        "accent_active": "#ffff00",
+        "danger_primary": "#ff0000",
+        "danger_hover": "#ff0000",
+        "success_primary": "#00ff00",
+        "warning_primary": "#ffcc00",
+        "scrollbar_bg": "#000000",
+        "scrollbar_handle": "#ffffff",
+        "scrollbar_handle_hover": "#ffff00"
+    }
+}

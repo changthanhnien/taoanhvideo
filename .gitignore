@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Project local directories & databases
+.vidgen/
+chrome_profile/
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.png
+*.jpg
+*.jpeg
+huge_video.mp4
+video_output/
+ffmpeg/
+
+# Nested duplicate folder
+NAVTools.exe_extracted/
+
+# Test Profiles & Temp Directories
+test_profile*/
+google_*/
+grok_*/
+*.tmp
+*.temp
+
+# PyInstaller / Build
+build/
+dist/
+*.spec
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

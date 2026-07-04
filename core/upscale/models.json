@@ -1,0 +1,34 @@
+{
+  "upscayl-lite": {
+    "preferred_scale": [4],
+    "gpu_memory": "low",
+    "quality_rank": 2,
+    "speed_rank": 1,
+    "supports_pass2": false,
+    "recommended_for": ["general", "photo", "fallback"]
+  },
+  "ultrasharp": {
+    "preferred_scale": [4],
+    "gpu_memory": "high",
+    "quality_rank": 1,
+    "speed_rank": 3,
+    "supports_pass2": true,
+    "recommended_for": ["poster", "ui", "text_heavy", "banner", "thumbnail"]
+  },
+  "remacri": {
+    "preferred_scale": [2, 4],
+    "gpu_memory": "medium",
+    "quality_rank": 2,
+    "speed_rank": 2,
+    "supports_pass2": false,
+    "recommended_for": ["portrait", "details"]
+  },
+  "realesr-animevideov3": {
+    "preferred_scale": [2, 3, 4],
+    "gpu_memory": "low",
+    "quality_rank": 1,
+    "speed_rank": 1,
+    "supports_pass2": false,
+    "recommended_for": ["anime", "flat_color", "2d_graphics"]
+  }
+}
