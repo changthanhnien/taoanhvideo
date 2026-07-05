@@ -355,6 +355,8 @@ class BrowserManager:
                     f"--user-data-dir={cookie_path}",
                     f"--remote-debugging-port={port}",
                     "--no-first-run",
+                    "--disable-gpu",
+                    "--no-sandbox",
                     "--no-default-browser-check",
                     "--disable-sync",
                     "--disable-signin-promo",
